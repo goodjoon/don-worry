@@ -167,3 +167,30 @@ src/
 
 
 ![Supervisor Agent 구조](supervisor_graph.png)
+
+
+## 실행 방법
+1. uv 기반의 환경으로 구동 해야 함
+```bash
+# project 의 root 에서 아래 실행
+$ uv sync
+```
+
+2. .env 내의 아래 설정값과 각족 OPEN API KEY 들을 확인한다
+
+```bash
+RESET_DB=false
+COUNTRY_PLAN_PDF_DIR=raw_files/country_docs
+CITY_PLAN_PDF_DIR=raw_files/city_docs
+PDF_PROCESS_MODE=fast
+```
+
+!!주의!! `RESET_DB` 값은 AP 최초실행 시 `true` 로 하여 PDF 파일들을 임베딩 하여야 한다
+
+3. 아래 커맨드로 실행 (혹은 VS Code 등에서 src/don_worry.py 실행)
+```bash
+$ uv run python src/don_worry.py
+```
+
+4. 브라우져로 http://localhost:7860 접속하여 대화
+
