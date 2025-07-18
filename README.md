@@ -194,3 +194,6 @@ $ uv run python src/don_worry.py
 
 4. 브라우져로 http://localhost:7860 접속하여 대화
 
+
+## 동작 화면 캡쳐 및 설명은 아래 페이지 링크 따라가주세요
+### 🍥🤜🤜🤜🤜 [동작 화면 설명](./docs/run.md)

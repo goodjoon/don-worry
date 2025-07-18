@@ -399,7 +399,7 @@ def create_gradio_app(agent_manager):
             "재개발 예정 지역 정보를 알려주세요"
         ],
         chatbot=gr.Chatbot(
-            height=600,
+            height=500,
             show_label=False
         ),
         textbox=gr.Textbox(
